@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hi Dev - Show your amazing stuff here!</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css.map">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <!--Navbar -->
+  <nav id="navbar" class="navbar has-shadow is-spaced">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://bulma.io">
+          <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+        </a>
+
+        <!-- Navigation Menu in Mobile using nav burger -->
+        <div class="navbar-burger burger" data-target="navMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <!-- Navigation Menu -->
+      <div id="navMenu" class="navbar-menu">
+        <div class="navbar-end">
+          <a href="#" class="navbar-item is-hoverable has-text-black">Home</a>
+          <a href="#blog" class="navbar-item has-text-black">Blog</a>
+          <a href="#projects" class="navbar-item has-text-black">Projects</a>
+          <!-- <a href="#" class="navbar-item has-text-black">Contact</a> -->
+        </div>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <!-- Welcome Section -->
+  <div class="hero is-primary is-bold">
+    <div class="hero-body">
+      <div class="container">
+        <!-- Columns for intro and photo -->
+        <div class="columns is-gapless">
+          <div class="column  is-four-fifths">
+            <!-- Welcome intro -->
+            <div class="content">
+              <p>Cras in nibh lacinia, venenatis nisi et, auctor urna. Donec pulvinar lacus sed diam dignissim, ut eleifend
+                eros accumsan. Phasellus non tortor eros. Ut sed rutrum lacus. Etiam purus nunc, scelerisque quis enim vitae,
+                malesuada ultrices turpis. Nunc vitae maximus purus, nec consectetur dui. Suspendisse euismod, elit vel rutrum
+                commodo, ipsum tortor maximus dui, sed varius sapien odio vitae est. Etiam at cursus metus.</p>
+            </div>
+
+            <div class="buttons is-rounded is-centered">
+              <!-- Github -->
+              <a href="https://github.com" target=_blank class="button is-rounded is-github raise">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>GitHub</span>
+              </a>
+              <!-- Twitter -->
+              <a href="https://twitter.com" target=_blank class="button is-rounded is-twitter raise">
+                <span class="icon">
+                  <i class="fab fa-twitter"></i>
+                </span>
+                <span>Twitter</span>
+              </a>
+              <!-- Stackoverflow -->
+              <!-- <a href="https://stackoverflow.com" target=_blank class="button raise">
+                <span class="icon">
+                  <i class="fab fa-stack-overflow"></i>
+                </span>
+                <span>Stackoverflow</span>
+              </a> -->
+              <!-- LinkedIn -->
+              <a href="https://linkedin.com" target=_blank class="button is-rounded raise is-linkedin">
+                <span class="icon">
+                  <i class="fab fa-linkedin"></i>
+                </span>
+                <span>LinkedIn</span>
+              </a>
+              <!-- Medium -->
+              <a href="https://medium.com" target=_blank class="button is-rounded raise is-white">
+                <span class="icon">
+                  <i class="fab fa-medium"></i>
+                </span>
+                <span>Medium</span>
+              </a>
+              <!-- Dev To -->
+              <!-- <a href="https://dev.to" target=_blank class="button raise">
+                <span class="icon">
+                  <i class=""></i>
+                </span>
+                <span>dev.to</span>
+              </a> -->
+            </div>
+
+            <!-- Resume Button -->
+            <p class="buttons is-centered">
+              <a href="#" class="button is-large">
+                <span class="icon">
+                  <i class="fas fa-file-pdf"></i>
+                </span>
+                <span>Resume</span>
+              </a>
+          </div>
+
+          <!-- Profile Picture -->
+          <div class="column">
+            <figure class="image is-square">
+              <!-- Pic credits https://goo.gl/kCjVj8 -->
+              <img src="https://goo.gl/E85JAn" style="border-radius:50%">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Banner for Blog -->
+  <section class="hero is-info" id="blog">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title is-2 ">
+          BLOG
+        </h1>
+      </div>
+    </div>
+  </section>
+
+
+  <br>
+  <br>
+  <br>
+
+  <!-- Blog Tiles -->
+  <!-- Always add the content inside a container -->
+  <!-- Adding section to divide them into different sections -->
+  <div class="container">
+    <div class="tile is-ancestor">
+      <div class="tile is-4 is-vertical is-parent">
+        <div class="tile is-child box is-shady">
+          <p class="title">One</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+        </div>
+        <div class="tile is-child box is-shady">
+          <p class="title">Two</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+        </div>
+      </div>
+      <div class="tile is-parent">
+        <div class="tile is-child box is-shady">
+            <figure class="image is-3by2">
+                <img src="https://bulma.io/images/placeholders/640x480.png">
+              </figure>
+          <p class="title">Three</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut. Morbi maximus, leo sit amet vehicula eleifend, nunc dui porta orci, quis semper odio felis ut quam.</p>
+          <p>Suspendisse varius ligula in molestie lacinia. Maecenas varius eget ligula a sagittis. Pellentesque interdum, nisl nec interdum maximus, augue diam porttitor lorem, et sollicitudin felis neque sit amet erat. Maecenas imperdiet felis nisi, fringilla luctus felis hendrerit sit amet. Aenean vitae gravida diam, finibus dignissim turpis. Sed eget varius ligula, at volutpat tortor.</p>
+          <p>Integer sollicitudin, tortor a mattis commodo, velit urna rhoncus erat, vitae congue lectus dolor consequat libero. Donec leo ligula, maximus et pellentesque sed, gravida a metus. Cras ullamcorper a nunc ac porta. Aliquam ut aliquet lacus, quis faucibus libero. Quisque non semper leo.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+  <!-- End of Blog -->
+  <section class="hero is-info">
+    <div class="hero-body">
+      <br>
+      <br>
+    </div>
+  </section>
+
+  <!-- Banner for Projects -->
+  <section class="hero is-warning" id="projects">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title is-2 is-black">
+          PROJECTS
+        </h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Cards -->
+  <!-- Always add the content inside a container -->
+  <!-- Adding section to divide them into different sections -->
+  <!-- https://dansup.github.io/bulma-templates/templates/modal-cards.html -->
+  <div class="container">
+    <div class="columns features">
+      <div class="column is-4">
+        <div class="card is-shady">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <a href="https://github.com" target="_blank">
+                <img src="https://source.unsplash.com/RWnpyGtY1aU" alt="Placeholder image" class="modal-button" data-target="modal-image2">
+              </a>
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="content">
+              <h4>Click on image above</h4>
+              <p>Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer enim neque
+                volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut consequat semper viverra nam.</p>
+              <!-- <span class="button is-link modal-button" data-target="modal-image2">Image modal</span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column is-4">
+        <div class="card is-shady">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <a href="https://github.com" target="_blank">
+                <img src="https://source.unsplash.com/6Ticnhs1AG0" alt="Placeholder image">
+              </a>
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="content">
+              <h4>Click on image above</h4>
+              <p>Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer enim neque
+                volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut consequat semper viverra nam.</p>
+              <!-- <span class="button is-link modal-button" data-target="modal-card">Modal Card</span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column is-4 modal-button" data-target="modal-image">
+        <div class="card is-shady">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <a href="https://github.com" target="_blank">
+                <img src="https://i.imgsafe.org/ba/baa924a5e3.png" alt="Placeholder image">
+              </a>
+
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="content">
+              <h4>Click on image above</h4>
+              <p>Imperdiet dui accumsan sit amet nulla facilisi morbi. Fusce ut placerat orci nulla pellentesque dignissim enim.
+                Libero id faucibus nisl tincidunt eget nullam. Commodo viverra maecenas accumsan lacus vel facilisis.</p>
+              <!-- <span class="button is-link modal-button" data-target="modal-image">Image modal</span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- End of Projects -->
+  <section class="hero is-warning">
+    <div class="hero-body">
+      <br>
+      <br>
+    </div>
+  </section>
+
+  <!-- Adding footer for displaying contact info and other useful links -->
+  <!-- Footer. Customise to your design . Fix the footer to stick at the bottom-->
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <a href="https://bulma.io">
+          <img src="https://bulma.io/images/made-with-bulma--semiblack.png" alt="Made with Bulma" width="128" height="24">
+        </a>
+        <p>
+          <strong>Bulma Dev Showcase Page</strong> by Krishna Tej . The source code is licensed
+          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Courtesy of Adam-Bray for responsive navigation bar in mobile https://www.adam-bray.com/2018/04/03/responsive-bulma-css-navigation-bar/ -->
+  <script>
+    (function () {
+      var burger = document.querySelector('.burger');
+      var nav = document.querySelector('#' + burger.dataset.target);
+
+      burger.addEventListener('click', function () {
+        burger.classList.toggle('is-active');
+        nav.classList.toggle('is-active');
+      });
+    })();
+  </script>
+</body>
+
+</html>

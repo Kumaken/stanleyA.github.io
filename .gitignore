@@ -1,0 +1,5 @@
+public/
+package.json
+*.lock
+csss/
+.DS_Store
