@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The Stanley A.</title>
+  <title>The Stanley A. - AI in Game Industry</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css.map">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
@@ -46,7 +46,7 @@
       <div class="hero-body">
         <div class="container has-text-centered">
           <h1 class="title is-2 ">
-            AI_In_Game_Industry
+            AI in Game Industry
           </h1>
         </div>
       </div>
@@ -64,19 +64,29 @@
 
               <p>The most basic and common trick to develop an AI is by an algorithm called Finite State Machine. It was introduced to video game industry back in 1990s. In a FSM, a designer generalizes all possible situations that an AI could encounter, and then programs a specific reaction for each situation. Basically, a FSM AI would promptly react to the human player’s action with its pre-programmed behavior. For example, in a shooting game, AI would attack when human player shows up and then retreat when its own health level is too low. In this FSM-oriented game, a given character can perform four basic actions in response to possible situations: aid, evade, wander and attack. Many famous games, such as Battle Field, Call of Duty, and Tomb Raider, incorporate successful examples of FSM AI design.</p>
 
+              <img src="resource/images/fsm.jpg">
+
               <p>Although simple, it wasn't the best approach as its behaviours and reaction to certain stimuli is pre-programmed. In other words, it suffers from its orderly, pattern-like behaviour. Players can abuse this weakness by studying its patterns and prepare a course of actions which takes advantage of this exposed pattern to victory. This can lead to players losing interest as the challenge wears of after that realization.</p>
 
               <p>Evidently, some game designers tried to make the machine a bit less predictable by the introduction of "randomness" in how the AI respond to the situation. However, this does not necessarily solves the problem as demonstrated by a JRPG game called Shin Megami Tensei: Nocturne. In that turn-based game, you will encounter a boss called "Mot" halfway through the game. Unfortunately, Mot has a random chance of using a certain ability which gives it extra turns to act out of the blue at the cost of nothing. Without luck, players may find that they never get any chance to do anything before dying due to "infinite enemy turns".</p>
               
+              <img src="resource/images/mot.jpg">
+              <p>https://megamitensei.fandom.com/wiki</p>
+              
               <p>Although this may only be a matter of bad game design (extra turns for free that can be abused by random chance?) and randomness may not necessarily be harmful for a game, this example shows that a bad decision in implementing randomness by a game designer may cause a very unpredictable and unwanted behaviour by AI. For gamers craving for challenge, randomness may not be ideal as well. Randomness introduces "Artificial Difficulty" where the game does not truly challenge the player's skill and becomes a matter of how well the player fares against luck.</p>
 
               <p>Another more advanced method is Monte Carlo Search Tree (MCST) algorithm. MCST embodies the strategy of using random trials to solve a problem. This is the AI strategy used in Deep Blue, the first computer program to defeat a human chess champion in 1997. For each point in the game, Deep Blue would use the MCST to first consider all the possible moves it could make, then consider all the possible human player moves in response, then consider all its possible responding moves, and so on. You can imagine all of the possible moves expanding like the branches grow from a stem–that is why we call it “search tree”. After repeating this process multiple times, the AI would calculate the payback and then decide the best branch to follow. After taking a real move, the AI would repeat the search tree again based on the outcomes that are still possible.  In video games, an AI with MCST design can calculate thousands of possible moves and choose the ones with the best payback (such as more gold).</p>
+
+              <img src="resource/images/msct.jpg">
 
               <p>In a more complex games where MSCT cannot possibly consider all the available moves, it would randomly choose some of the possible moves to start with. Therefore, outcomes become much more uncertain to human players. </p>
 
               <p>The examples above shows that AIs in games lack one layer of complexity, that is machine learning. Machine learning is very costly and risky to implement. A machine equipped with the ability to learn new things or adapt to situation might end up doing something that the developer never imagined before, which is a very undesirable behaviour in machines built to enhance players' experience.</p>
 
               <p>However, this does not stop us to try and develop one anyway. OpenAI developed a Dota 2 AI that is able to beat average casual gamer consistently. Although it wasn't able to compete at a professional level yet, it is still a giant leap in AI development history. Dota 2 is a very complex game with extensive aspect to focus on compared to board games such as Go or Chess. It is also a team-effort game which consists of 5 players that need to communicate and collaborate with each other in order to secure victory. These are very tall hurdles for any AI developer.
+              
+              <img src="resource/images/openai.jpg">
+              <p>source: denofgeek.com</p>
 
               <p>OpenAI's Dota 2 bot implements a machine learning method called "reinforcement learning". This is a common training method that’s essentially trial-and-error at a huge scale. (It has its weaknesses, but it also produces incredible results, including AlphaGo.) Instead of coding the bots with the rules of Dota 2, they’re thrown into the game and left to figure things out for themselves. OpenAI’s engineers help this process along by rewarding them for completing certain tasks (like killing an opponent or winning a match) but nothing more than that. On the flipside, this method offers flexibility, as it truly relies on the bot's ability to learn on its own without much pre-programming.</p>
 
@@ -85,6 +95,9 @@
               <p>From this project, a lot of players were also able to learn new things about the game. The extensive amount of trial-and-error performed in-game actually revealed a number of bugs and exploits that no players has every discovered before. There was a hidden mechanic in Dota 2 which allows players to recharge a certain weapon quickly by staying out of range of the enemy. The way the bot plays also inspired some professional players to come up with new tactics and approach to secure victory. </p>
 
               <p>In AlphaGo's case, Lee Sedol himself admitted that despite being the worldwide champion in Go, he and the rest of Go community got something to learn by the way the AI competed.</p>
+
+              <img src="resource/images/alphago.jpg">
+              <p>source: TWiT Netcast Network</p>
 
               <p>This project does not only benefit the AI field in gaming industry. THe project also revealed the main problem and hurdle in AI development from every field. This is revealed through Dota 2 complex strategy which requires heavy long-term planning and adaptability of the players.</p>
 
@@ -96,9 +109,23 @@
               
               <p>OpenAI's team said it is possible to build a bot which really simulates how a human play Dota 2 by analyzing pixels and physically use keyboards and mouse for input. However, this idea would require much more extensive resource and effort which they were also unsure would bring a desirable result. Therefore they concluded that the outcome does not worth the cost to pursue it.</p>
 
+              <img src="resource/images/elonmusk.jpg">
+              <p>source: steemit.com</p>
+
               <p>As a closing note, Elon Musk has recently warned the world that the fast development of AI with learning capability by Google and Facebook would put humanity in danger. Such argument has drawn a lot of public attention to the topic of AI, which is great. But what a lot of people doesn't realize that they got the timescale wrong. Just like how 50 years ago laser technology took up a whole room, while nowadays teachers often keep a laser pointer in their pocket. It took 50 years of commercialization and advancement to the point where it offers both convenience and reachability for everyone. Sure at some point in the future, AI may rules everything and become an unreplacable aspect of our daily lives. But not in a decade or two though. It will happen, but don't expect it too soon.</p>
 
+              <p>references:</p>
+              <p>https://www.theverge.com/2018/8/28/17787610/openai-dota-2-bots-ai-lost-international-reinforcement-learning</p>
+              <p>https://www.theverge.com/2017/10/18/16495548/deepmind-ai-go-alphago-zero-self-taught</p>
+              <p>https://www.theverge.com/2018/10/16/17985168/deep-learning-revolution-terrence-sejnowski-artificial-intelligence-technology</p>
+              <p>http://sitn.hms.harvard.edu/flash/2017/ai-video-games-toward-intelligent-game/</p>
+              <p>https://www.theverge.com/2019/3/6/18222203/video-game-ai-future-procedural-generation-deep-learning</p>
+              <p>https://en.wikipedia.org/wiki/Finite-state_machine</p>
+              <p>https://en.wikipedia.org/wiki/Monte_Carlo_tree_search</p>
           </div>
+        </div>
+      </div>
+    </div>
 
   <!-- Adding footer for displaying contact info and other useful links -->
   <!-- Footer. Customise to your design . Fix the footer to stick at the bottom-->
