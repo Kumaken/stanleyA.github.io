@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Stanley A.</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css.map">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <!--Navbar -->
+  <nav id="navbar" class="navbar has-shadow is-spaced">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://kumaken.github.io/stanleyA.github.io/">
+          <img src="resource/images/bear_face.png" alt="Am I a joke to you?">
+        </a>
+        Am I a joke to you?
+        <!-- Navigation Menu in Mobile using nav burger -->
+        <div class="navbar-burger burger" data-target="navMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <!-- Navigation Menu -->
+      <div id="navMenu" class="navbar-menu">
+        <div class="navbar-end">
+          <a href="#" class="navbar-item is-hoverable has-text-black">Home</a>
+          <a href="#blog" class="navbar-item has-text-black">Articles</a>
+          <a href="#projects" class="navbar-item has-text-black">Projects</a>
+          <!-- <a href="#" class="navbar-item has-text-black">Contact</a> -->
+        </div>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <!-- Contents: -->
+  <h1 class="title center" id="blog-title"> Artificial Intelligence In Gaming Industry </h1>
+  <p class="justify" id="blog-content">
+      HELLO
+  ZA
+    WARUDO
+  </p>
+
+  <!-- Adding footer for displaying contact info and other useful links -->
+  <!-- Footer. Customise to your design . Fix the footer to stick at the bottom-->
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <a href="https://github.com/Kumaken/">
+          <span class="icon">
+              <i class="fab fa-github"></i>
+            </span>
+        </a>
+        <p>
+          <strong>Personal Github Page</strong> by Abel Stanley. </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Courtesy of Adam-Bray for responsive navigation bar in mobile https://www.adam-bray.com/2018/04/03/responsive-bulma-css-navigation-bar/ -->
+  <script>
+    (function () {
+      var burger = document.querySelector('.burger');
+      var nav = document.querySelector('#' + burger.dataset.target);
+
+      burger.addEventListener('click', function () {
+        burger.classList.toggle('is-active');
+        nav.classList.toggle('is-active');
+      });
+    })();
+  </script>
+</body>
+
+</html>
